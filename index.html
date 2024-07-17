@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" media="(max-width:767.98px)" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>iBrush test</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <a href="/">
+                            <img src="img/logo.svg" alt="logo" class="header__logo logo">
+                        </a>
+                        <nav class="header__nav nav">
+                            <div class="nav__icon icon-nav"></div>
+                            <div class="nav__body">
+                                <ul class="nav__list">
+                                    <li class="nav__block icon-arrow1" data-spollers="767,max">
+                                        <span data-spoller>Статьи</span>
+                                        <div class="nav__dropdown dropdown">
+                                            <ul class="dropdown__list">
+                                                <li>
+                                                    <a href="#">Статья Pro</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Статья для новичков</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Статья ниндзя</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav__block icon-arrow1" data-spollers="767,max">
+                                        <span data-spoller>Курсы</span>
+                                        <div class="nav__dropdown dropdown">
+                                            <ul class="dropdown__list">
+                                                <li>
+                                                    <a href="#">JavaScript Pro</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">JavaScript для новичков</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">JavaScript ниндзя</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Новости</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">О нас</a>
+                                    </li>
+                                </ul>
+                                <a href="#popup" id="popup-link" class="nav__btn btn">Начать учиться</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <section class="books">
+                    <div class="books__body">
+                        <div class="container">
+                            <h1>Путь JavaScript</h1>
+                        </div>
+                        <div class="books__content">
+                            <div class="books__img">
+                                <div class="books__date">
+                                    <span>12</span>
+                                    <span>Апреля</span>
+                                </div>
+                                <img src="img/books.jpg" alt="books">
+                            </div>
+                            <p class="books__text">Можно выделить три основных направления для прогресса JavaScript</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="blockquote">
+                    <div class="container">
+                        <div class="blockquote__body">
+                            <h3>Серверный JavaScript</h3>
+                            <blockquote>
+                                <div class="blockquote__text">
+                                    <img src="img/blockquote.svg" alt="">
+                                    <p>
+                                        Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.
+                                        <span class="blockquote__name">— Р. Мартин</span>
+                                    </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </section>
+                <section class="promo">
+                    <div class="container">
+                        <div class="promo__body">
+                            <picture>
+                                <source srcset="img/banner_mob.jpg" media="(max-width: 767.98px)" alt="banner">
+                                <img src="img/banner_desk.jpg" alt="banner">
+                            </picture>
+                            <p>
+                                Реклама на
+                                <a href="http://blabla.com/" target="_blank">blabla.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="conclusion">
+                    <div class="container">
+                        <div class="conclusion__body">
+                            <h3>Заключение</h3>
+                            <p>Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="review">
+                    <div class="container">
+                        <div class="review__body">
+                            <h2>Что вы думаете об этой книге?</h2>
+                            <div class="review__rating rating">
+                                <p class="review__title rating__title">оцените статью</p>
+                                <div class="rating__row">
+                                    <span class="rating__number" id="rating"></span>
+                                    <div class="rating__stars">
+                                        <div class="rating__star icon-star"></div>
+                                        <div class="rating__star icon-star"></div>
+                                        <div class="rating__star icon-star"></div>
+                                        <div class="rating__star icon-star"></div>
+                                        <div class="rating__star icon-star"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review__form form">
+                                <p class="review__title form__title">добавить комментарий к книге</p>
+                                <form action method id="form">
+                                    <div class="form__body">
+                                        <div class="form__row">
+                                            <label for="name">
+                                                <span>Имя</span>
+                                                <input
+                                                    type="text"
+                                                    name="name"
+                                                    id="name"
+                                                    placeholder="Имя"
+                                                    required
+                                                >
+                                            </label>
+                                            <label for="email">
+                                                <span>Email</span>
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    id="email"
+                                                    placeholder="Email"
+                                                    required
+                                                >
+                                            </label>
+                                            <select name="select">
+                                                <option disabled>Выберите книгу</option>
+                                                <option>JavaScript ниндзя</option>
+                                                <option>Pragmatic Guide to JavaScript</option>
+                                                <option>Pro JavaScript Techniques</option>
+                                                <option>Выразительный JavaScript</option>
+                                            </select>
+                                        </div>
+                                        <textarea name="msg" placeholder="Ваш отзыв" maxlength="600"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn form__btn">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="posts">
+                    <div class="container">
+                        <div class="posts__body">
+                            <h2>Похожие посты</h2>
+                            <div class="posts__slider slider swiper">
+                                <div class="swiper-wrapper slider__wrapper">
+                                    <div class="swiper-slide slider__item">
+                                        <a href="#" target="_blank">
+                                            <img src="img/react.svg" alt="react">
+                                            <span>12 декабря</span>
+                                            <p>События жизненного цикла ReactJS</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide slider__item">
+                                        <a href="#" target="_blank">
+                                            <img src="img/grid.svg" alt="grid">
+                                            <span>10 декабря</span>
+                                            <p>CSS Grids. Полное руководство</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide slider__item">
+                                        <a href="#" target="_blank">
+                                            <img src="img/js.svg" alt="js">
+                                            <span>5 декабря</span>
+                                            <p>Асихнронность в JavaScript</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination slider__pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="popup" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <div class="popup__top">
+                                <a href="#" class="popup__close icon-close"></a>
+                                <h3 class="popup__title">Начать учиться</h3>
+                                <div class="popup__text">Оставьте заявку и наш менеджер вам перезвонит</div>
+                            </div>
+                            <div class="popup__form form-popup">
+                                <form action method id="form-popup">
+                                    <div class="form-popup__body">
+                                        <label for="name">
+                                            <span>Как вас зовут</span>
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                placeholder="Как вас зовут"
+                                                required
+                                            >
+                                        </label>
+                                        <label for="email">
+                                            <span>Ваш Email</span>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Ваш Email"
+                                                required
+                                            >
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn form__btn">Отправить</button>
+                                </form>
+                                <div class="form-popup__politic">
+                                    Нажимая кнопку «Отправить», вы соглашаетесь
+                                    <br>
+                                    с
+                                    <a href="#">политикой конфиденциальности</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <p>Хвощевский Артем Михайлович</p>
+                <script>document.write(new Date().getFullYear())</script>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
